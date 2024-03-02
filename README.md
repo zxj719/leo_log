@@ -27,4 +27,8 @@ and
 <plugin filename="libignition-gazebo-diff-drive-system.so"
     name="ignition::gazebo::systems::DiffDrive">
 ```
-Next step is to mount a lidar on it.
+Watching the screenshots of the urdf file in the raspberry pi of the leo rover from the last lab session, I noticed that there are still many plugins for gazebo not been implemented in my .xacro file.
+Next step is to mount a lidar on the planar and activate it in gazebo.
+
+
+leo_viz
