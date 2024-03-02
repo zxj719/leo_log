@@ -16,7 +16,7 @@ ros2 topic info /clock -v
 ### 15:52 
 Compare the differences between the gz_example_description_package and my leo simualtion package. Try to realize the diff control without leo diff control plugins.
 ### 16:40 
-And I finished it. Check the topic and tf.
+Changing the directory name(to avoid the conflict with the leo_description pkg in /share,which I suppose was implemented with the leo_viz pkg) and modifying the absolute address into $(find) substitute relating to .stl and .dae models, I finished it. The crucial part is to change the names of topic into '/model/leo_rover/...' format in gazebo sim pluggins and remap them in launch file(and I don't know why). Check the topic and tf, healthy.
 There is seemingly no difference bewtween
 ```
 <plugin filename="ignition-gazebo-diff-drive-system" 
