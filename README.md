@@ -29,6 +29,21 @@ and
 ```
 Watching the screenshots of the urdf file in the raspberry pi of the leo rover from the last lab session, I noticed that there are still many plugins for gazebo not been implemented in my .xacro file.
 Next step is to mount a lidar on the planar and activate it in gazebo.
-
+### 18:04
+When I tried to fix the problem that gazebo can't publish imu and lidar data which is definitely the issues relating to the plugins, I found myself failed to load the plugin lib as I copy codes from the urdf file in the raspberry pi.
+'''
+  <!-- Imu -->
+    <gazebo reference="${link_prefix}imu_frame">
+      <sensor type="imu" name="leo_imu_sensor">
+        <update_rate>100</update_rate>
+        <plugin filename="libgazebo_ros_imu_sensor.so"
+          name="imu_plugin">
+          <topicName>${topic_prefix}imu/data_raw</topicName>
+          <updateRateHZ>100.0</updateRateHZ>
+          <initialOrientationAsReference>false</initialOrientationAsReference>
+        </plugin>
+      </sensor>
+    </gazebo>
+```
 
 leo_viz
