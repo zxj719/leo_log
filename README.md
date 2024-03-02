@@ -31,7 +31,7 @@ Watching the screenshots of the urdf file in the raspberry pi of the leo rover f
 Next step is to mount a lidar on the planar and activate it in gazebo.
 ### 18:04
 When I tried to fix the problem that gazebo can't publish imu and lidar data which is definitely the issues relating to the plugins, I found myself failed to load the plugin lib as I copy codes from the urdf file in the raspberry pi.
-'''
+'''xml
   <!-- Imu -->
     <gazebo reference="${link_prefix}imu_frame">
       <sensor type="imu" name="leo_imu_sensor">
@@ -45,5 +45,7 @@ When I tried to fix the problem that gazebo can't publish imu and lidar data whi
       </sensor>
     </gazebo>
 ```
-
+```bash
+[Err] [SystemLoader.cc:94] Failed to load system plugin [libgazebo_ros_imu_sensor.so] : couldn't find shared library.
+```
 leo_viz
