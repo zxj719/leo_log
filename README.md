@@ -18,8 +18,13 @@ Compare the differences between the gz_example_description_package and my leo si
 ### 16:40 
 And I finished it. Check the topic and tf.
 There is seemingly no difference bewtween
+```
 <plugin filename="ignition-gazebo-diff-drive-system" 
-    name="ignition::gazebo::systems::DiffDrive"> and
+    name="ignition::gazebo::systems::DiffDrive">
+```
+and
+```
 <plugin filename="libignition-gazebo-diff-drive-system.so"
     name="ignition::gazebo::systems::DiffDrive">
+```
 Next step is to mount a lidar on it.
