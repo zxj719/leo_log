@@ -13,3 +13,13 @@ ros2 launch leo_gz_bringup leo_gz.launch.py
 ### 13:53 
 launch the diff demo of gazebo and test it. The conclusion is that when you get error in the lost of the package that you just apt install, shutting down and rebooting will be fine.
 ros2 topic info /clock -v
+### 15:52 
+Compare the differences between the gz_example_description_package and my leo simualtion package. Try to realize the diff control without leo diff control plugins.
+### 16:40 
+And I finished it. Check the topic and tf.
+There is seemingly no difference bewtween
+<plugin filename="ignition-gazebo-diff-drive-system" 
+    name="ignition::gazebo::systems::DiffDrive"> and
+<plugin filename="libignition-gazebo-diff-drive-system.so"
+    name="ignition::gazebo::systems::DiffDrive">
+Next step is to mount a lidar on it.
