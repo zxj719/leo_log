@@ -79,4 +79,8 @@ to
 ```
 ### 12:02
 And after 3 weeks, I can finally bond the /map from slam_toolbox! God bless group 4! Next step would be much easier I suppose, since I've been tortured for over 16 hours on this issue and tried at least 5 approaches.
+### 22:33 
+Separate the lidar urdf part from the original macro.xacro file for later implementation in real world. And seperate the slam_toolbox from that launch file for the same reason and add the map_saver_server.
+
 leo_viz
+
