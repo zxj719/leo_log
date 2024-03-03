@@ -48,4 +48,23 @@ When I tried to fix the problem that gazebo can't publish imu and lidar data whi
 ```bash
 [Err] [SystemLoader.cc:94] Failed to load system plugin [libgazebo_ros_imu_sensor.so] : couldn't find shared library.
 ```
+## 3rd, March
+### 11:04
+Neither imu nor lidar sensor could be simulated in gazebo yesterday, and there was no relevant published topic as consequences. Today, imu part goes well abruptly.
+WTF The codes order matters! I have to put the plugin block within the sensor block like this:
+```xml
+ <gazebo reference="${link_prefix}imu_frame">
+      <sensor type="imu" name="leo_imu_sensor">
+      <plugin filename="libignition-gazebo-imu-system.so"
+        name="ignition::gazebo::systems::Imu">
+      </plugin>
+        <update_rate>100</update_rate>
+        <visualize>true</visualize>
+        <topic>${topic_prefix}imu/data_raw</topic>
+        <always_on>1</always_on>
+        <ignition_frame_id>${link_prefix}imu_frame</ignition_frame_id>
+      </sensor>
+    </gazebo>
+```
+Or I would fail to launch this part in gazebo. Idk.
 leo_viz
