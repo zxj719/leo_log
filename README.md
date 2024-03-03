@@ -66,5 +66,17 @@ WTF The codes order matters! I have to put the plugin block within the sensor bl
       </sensor>
     </gazebo>
 ```
-Or I would fail to launch this part in gazebo. Idk.
+Or I would fail to launch this part in gazebo.
+### 11:43 
+Now the lidar and imu can be safely implemented and launched. New slight issue is there existing a minor upper angle, that is a pitch angle of the body so that the lidar also represents a inclined scan process.
+And I fixed it by changing the rocker joint parameters from 
+```xml
+<limit effort="100.0" lower="-0.24" upper="0.24" velocity="100.0"/>
+```
+to
+```xml
+<limit effort="100.0" lower="-0" upper="0" velocity="100.0"/>
+```
+### 12:02
+And after 3 weeks, I can finally bond the /map from slam_toolbox! God bless group 4! Next step would be much easier I suppose, since I've been tortured for over 16 hours on this issue and tried at least 5 approaches.
 leo_viz
