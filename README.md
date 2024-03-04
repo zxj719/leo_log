@@ -84,7 +84,7 @@ Separate the lidar urdf part from the original macro.xacro file for later implem
 
 ## 4th, March
 ### 18:44
-Try to fix the visualization problem in rviz2. If you want vscode to view .rviz file as yaml format,
+Try to fix the visualization problem in rviz2. If you want vscode to view .rviz file as yaml format, add it to the setting.json
 ```json
 "files.associations": {
         "*.rviz": "yaml"
