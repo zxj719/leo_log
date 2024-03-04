@@ -3,7 +3,7 @@
 ## 2ed, March
 ### 12:57
 Given the incompatibility btween two different versions of Gazebo, I dicide to use the gazebo lib diff-control plugins for simulation.
-VERSION={'Ubuntu':(22.04, Jammy), 'ros':humble, 'Gazebo':(11, fortress), 'gz':ignition-gazeb06}
+VERSION={'Ubuntu':(22.04, Jammy), 'ros':humble, 'Gazebo':(11, fortress), 'gz':ignition-gazebo6}
 ### 13:23 
 Afer removing the self-defined differential control plugin, I successfully launch the model in Gazebo simulaiton, however, encountering the error:
 Failed to load system plugin [libleo_gz_differential_plugin.so] : couldn't find shared library.
