@@ -91,7 +91,7 @@ Try to fix the visualization problem in rviz2. If you want vscode to view .rviz 
     },
 ```
 ### 19:10 
-It turns out changing \$(find my_leo) into file://\$(find my_leo) in urdf can fix the problem that rviz2 can't locate the .stl and .dae files.
+It turns out changing \\$(find my_leo) into file://\\$(find my_leo) in urdf can fix the problem that rviz2 can't locate the .stl and .dae files.
 ### 20:13 
 Implemented bt, planner and controller into map_maker.launch.py, successfully achieved navigation by A*. Next, learn more about nav2 and frontier algorithm, gmapping.
 
