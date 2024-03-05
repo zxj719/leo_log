@@ -87,13 +87,21 @@ Separate the lidar urdf part from the original macro.xacro file for later implem
 Try to fix the visualization problem in rviz2. If you want vscode to view .rviz file as yaml format, add it to the setting.json
 ```json
 "files.associations": {
-        "*.rviz": "yaml"
+        "*.rviz": "yaml",
+        "*.sdf": "xml",
+        
     },
 ```
 ### 19:10 
 It turns out changing \\$(find my_leo) into file://\\$(find my_leo) in urdf can fix the problem that rviz2 can't locate the .stl and .dae files.
 ### 20:13 
 Implemented bt, planner and controller into map_maker.launch.py, successfully achieved navigation by A*. Next, learn more about nav2 and frontier algorithm, gmapping.
+
+## 5th, March
+### 18:24
+Joystick, first connect with the ros2 system. Maybe wait for tomerrow when I get the JOY.
+### 19:15 
+Added a red cube object in Gazebo. 
 
 leo_viz
 
