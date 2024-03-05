@@ -103,7 +103,7 @@ Joystick, first connect with the ros2 system. Maybe wait for tomerrow when I get
 ### 19:15 
 Added a red cube object in Gazebo. 
 ### 22:33 
-Prepared for tomorrow lab session. Packed up several pkgs in order to make the leo slam successfully. 
+Prepared for tomorrow lab session. Packed up several pkgs in order to make the leo slam successfully. Merge nav2.rviz into robot.rviz.
 1. Tomorrow, we will first try to use the laser.launch.xml in my teleop_leo repo without the sourcing rplidar_create_rules.sh, or we need to put the source file into /etc self start file along with the robot starting itself in raspberri pi.
 2. Secondly, set up laser.launch.xml and laser.urdf.xacro and launch then in robot urdf file and robot.launch.xml respectively.
 3. Thirdly, we need to connect joy or keyboard with nuc nd send order. 
