@@ -113,5 +113,9 @@ Prepared for tomorrow lab session. Packed up several pkgs in order to make the l
 ### 19:08 
 Today lab session, I still got stuck in the problem that /tf topic won't publish the transformation between lidar and base_link, and I did what I had planned, but it didn't work. The gap bwtween the simulation and reality is wider than i expected. Now, I would focus more on the simulaiton and find a way to realize the task that the robot should perform an automous navigation to find the object.
 
+## 7th, March
+### 18:37
+Learn to comprehend the bt.
+
 leo_viz
 
